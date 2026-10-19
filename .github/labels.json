@@ -1,0 +1,57 @@
+[
+  {
+    "name": "new",
+    "color": "d4e5f7",
+    "description": "New submission awaiting triage"
+  },
+  {
+    "name": "needs-information",
+    "color": "fff2c2",
+    "description": "Waiting for sources or clarification"
+  },
+  {
+    "name": "under-review",
+    "color": "c5def5",
+    "description": "Sources and proposed changes are being reviewed"
+  },
+  {
+    "name": "accepted",
+    "color": "c2e0c6",
+    "description": "Approved for inclusion; publication is pending"
+  },
+  {
+    "name": "published",
+    "color": "0e8a16",
+    "description": "Update published; the issue links to the result"
+  },
+  {
+    "name": "duplicate",
+    "color": "d4c5f9",
+    "description": "Already covered by another issue or result"
+  },
+  {
+    "name": "declined",
+    "color": "e4e669",
+    "description": "Not being added; see the editorial explanation"
+  },
+  {
+    "name": "new-result",
+    "color": "bfdadc",
+    "description": "Theorem, conjecture or other result proposal"
+  },
+  {
+    "name": "progress",
+    "color": "bfdadc",
+    "description": "Progress, proof claim or counterexample"
+  },
+  {
+    "name": "review-resource",
+    "color": "bfdadc",
+    "description": "Review, explanation or Lean resource"
+  },
+  {
+    "name": "correction",
+    "color": "bfdadc",
+    "description": "Correction to an entry or website"
+  }
+]

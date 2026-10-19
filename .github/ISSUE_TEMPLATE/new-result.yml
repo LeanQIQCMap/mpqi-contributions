@@ -1,0 +1,90 @@
+name: "Suggest a theorem or conjecture"
+description: "Propose a result with its statement, assumptions and sources."
+title: "[New result] "
+labels:
+  - "new"
+  - "new-result"
+body:
+  -
+    type: "markdown"
+    attributes:
+      value: "Thank you for helping improve MPQI Proof Map. This submission, your GitHub username and all comments will be public immediately. Please do not include private contact details or confidential material. Inclusion in the Map requires editorial review; a submission is not a correctness endorsement."
+  -
+    type: "input"
+    id: "result"
+    attributes:
+      label: "Existing result ID or page link"
+      description: "Use the stable result ID or paste the result page URL."
+    validations:
+      required: false
+  -
+    type: "input"
+    id: "result-title"
+    attributes:
+      label: "Result title"
+      description: "If the website supplied this title, keep it unless you are proposing a title correction."
+    validations:
+      required: false
+  -
+    type: "dropdown"
+    id: "result-kind"
+    attributes:
+      label: "What are you suggesting?"
+      options:
+        - "Theorem or bound"
+        - "Conjecture or open problem"
+        - "Other mathematical result"
+    validations:
+      required: true
+  -
+    type: "textarea"
+    id: "statement"
+    attributes:
+      label: "Statement and assumptions"
+      description: "State the question or result, including its regime and what would resolve it. Mathematics in Markdown is welcome."
+    validations:
+      required: true
+  -
+    type: "textarea"
+    id: "sources"
+    attributes:
+      label: "Sources and statement location"
+      description: "Link the original paper or source and give the theorem, equation, section or problem number. For an original contributor question, say so and give its background sources."
+    validations:
+      required: true
+  -
+    type: "textarea"
+    id: "context"
+    attributes:
+      label: "What is known?"
+      description: "Optional: existing proofs, partial results, counterexamples or related Map entries. Explain which exact case each source addresses."
+    validations:
+      required: false
+  -
+    type: "textarea"
+    id: "attribution"
+    attributes:
+      label: "Authors and contributions"
+      description: "Credit original authors and problem contributors. If a source discloses AI involvement, identify what it says and where. Leave undisclosed involvement unknown."
+    validations:
+      required: false
+  -
+    type: "input"
+    id: "credit"
+    attributes:
+      label: "Contributor credit"
+      description: "Your preferred public name and optional affiliation, or “no acknowledgment”. If blank, we may acknowledge your GitHub username. Your issue author identity remains public."
+    validations:
+      required: false
+  -
+    type: "checkboxes"
+    id: "submission-agreement"
+    attributes:
+      label: "Before submitting"
+      options:
+        -
+          label: "I understand that this submission, my GitHub username and the discussion are public immediately."
+          required: true
+        -
+          label: "I have permission to share the material. I submit my original wording under the repository’s Apache 2.0 license and identify any third-party quotations and their sources."
+          required: true

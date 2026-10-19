@@ -1,0 +1,83 @@
+name: "Add a review, explanation or Lean resource"
+description: "Link a human review, readable explanation, Lean project or other useful resource."
+title: "[Resource] "
+labels:
+  - "new"
+  - "review-resource"
+body:
+  -
+    type: "markdown"
+    attributes:
+      value: "Thank you for helping improve MPQI Proof Map. This submission, your GitHub username and all comments will be public immediately. Please do not include private contact details or confidential material. Inclusion in the Map requires editorial review; a submission is not a correctness endorsement."
+  -
+    type: "input"
+    id: "result"
+    attributes:
+      label: "Existing result ID or page link"
+      description: "Use the stable result ID or paste the result page URL."
+    validations:
+      required: true
+  -
+    type: "input"
+    id: "result-title"
+    attributes:
+      label: "Result title"
+      description: "If the website supplied this title, keep it unless you are proposing a title correction."
+    validations:
+      required: false
+  -
+    type: "dropdown"
+    id: "resource-kind"
+    attributes:
+      label: "Type of contribution"
+      options:
+        - "Human review"
+        - "Readable explanation or rewrite"
+        - "Lean formalization resource"
+        - "Other proof resource"
+    validations:
+      required: true
+  -
+    type: "textarea"
+    id: "resource"
+    attributes:
+      label: "Resource and authors"
+      description: "Give the public URL, authors or maintainers, and version/date where available. For Lean resources, source links and project documentation are enough; do not run code for this survey."
+    validations:
+      required: true
+  -
+    type: "textarea"
+    id: "target"
+    attributes:
+      label: "Which proof or statement does it concern?"
+      description: "Identify the proof/statement version and what is covered. For a review, say whether it concerns the whole argument or selected steps, and whether the reviewer is a proof author."
+    validations:
+      required: true
+  -
+    type: "textarea"
+    id: "notes"
+    attributes:
+      label: "Additional context"
+      description: "Optional: outcome of a review, disclosed AI involvement in an explanation, or scope limitations of a formalization."
+    validations:
+      required: false
+  -
+    type: "input"
+    id: "credit"
+    attributes:
+      label: "Contributor credit"
+      description: "Your preferred public name and optional affiliation, or “no acknowledgment”. If blank, we may acknowledge your GitHub username. Your issue author identity remains public."
+    validations:
+      required: false
+  -
+    type: "checkboxes"
+    id: "submission-agreement"
+    attributes:
+      label: "Before submitting"
+      options:
+        -
+          label: "I understand that this submission, my GitHub username and the discussion are public immediately."
+          required: true
+        -
+          label: "I have permission to share the material. I submit my original wording under the repository’s Apache 2.0 license and identify any third-party quotations and their sources."
+          required: true

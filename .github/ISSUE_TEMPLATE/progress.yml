@@ -1,0 +1,85 @@
+name: "Share progress or a proof"
+description: "Add a paper, proof attempt, partial result or counterexample to an existing result."
+title: "[Progress] "
+labels:
+  - "new"
+  - "progress"
+body:
+  -
+    type: "markdown"
+    attributes:
+      value: "Thank you for helping improve MPQI Proof Map. This submission, your GitHub username and all comments will be public immediately. Please do not include private contact details or confidential material. Inclusion in the Map requires editorial review; a submission is not a correctness endorsement."
+  -
+    type: "input"
+    id: "result"
+    attributes:
+      label: "Existing result ID or page link"
+      description: "Use the stable result ID or paste the result page URL."
+    validations:
+      required: true
+  -
+    type: "input"
+    id: "result-title"
+    attributes:
+      label: "Result title"
+      description: "If the website supplied this title, keep it unless you are proposing a title correction."
+    validations:
+      required: false
+  -
+    type: "dropdown"
+    id: "progress-kind"
+    attributes:
+      label: "Type of progress"
+      options:
+        - "Proposed solution or proof"
+        - "Partial progress"
+        - "Counterexample"
+        - "Numerical evidence"
+        - "Critique or correction to a proof"
+        - "Other update"
+    validations:
+      required: true
+  -
+    type: "textarea"
+    id: "sources"
+    attributes:
+      label: "Paper or proof sources"
+      description: "Give a stable paper/preprint link or a public proof link, the version/date, and the relevant theorem or section."
+    validations:
+      required: true
+  -
+    type: "textarea"
+    id: "scope"
+    attributes:
+      label: "What does this establish?"
+      description: "Explain the precise statement addressed, assumptions and remaining limitations. Distinguish a claimed proof from an established solution."
+    validations:
+      required: true
+  -
+    type: "textarea"
+    id: "review"
+    attributes:
+      label: "Authors, AI involvement and human review"
+      description: "Credit the authors. Describe AI involvement only when disclosed. Link any human review to the exact proof version; author checking, independent review and rewriting are different."
+    validations:
+      required: false
+  -
+    type: "input"
+    id: "credit"
+    attributes:
+      label: "Contributor credit"
+      description: "Your preferred public name and optional affiliation, or “no acknowledgment”. If blank, we may acknowledge your GitHub username. Your issue author identity remains public."
+    validations:
+      required: false
+  -
+    type: "checkboxes"
+    id: "submission-agreement"
+    attributes:
+      label: "Before submitting"
+      options:
+        -
+          label: "I understand that this submission, my GitHub username and the discussion are public immediately."
+          required: true
+        -
+          label: "I have permission to share the material. I submit my original wording under the repository’s Apache 2.0 license and identify any third-party quotations and their sources."
+          required: true

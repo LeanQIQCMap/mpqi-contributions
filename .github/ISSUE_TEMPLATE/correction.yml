@@ -1,0 +1,63 @@
+name: "Correct an entry"
+description: "Report a statement, credit, source, status or website problem."
+title: "[Correction] "
+labels:
+  - "new"
+  - "correction"
+body:
+  -
+    type: "markdown"
+    attributes:
+      value: "Thank you for helping improve MPQI Proof Map. This submission, your GitHub username and all comments will be public immediately. Please do not include private contact details or confidential material. Inclusion in the Map requires editorial review; a submission is not a correctness endorsement."
+  -
+    type: "input"
+    id: "result"
+    attributes:
+      label: "Existing result ID or page link"
+      description: "Use the stable result ID or paste the result page URL."
+    validations:
+      required: true
+  -
+    type: "input"
+    id: "result-title"
+    attributes:
+      label: "Result title"
+      description: "If the website supplied this title, keep it unless you are proposing a title correction."
+    validations:
+      required: false
+  -
+    type: "textarea"
+    id: "correction"
+    attributes:
+      label: "What should change?"
+      description: "Explain the current problem and the correction you suggest. For a website problem, describe what happened."
+    validations:
+      required: true
+  -
+    type: "textarea"
+    id: "sources"
+    attributes:
+      label: "Supporting source"
+      description: "Link the paper, source or relevant version when the correction concerns mathematics, credits or status. A typo or broken link does not require a paper."
+    validations:
+      required: false
+  -
+    type: "input"
+    id: "credit"
+    attributes:
+      label: "Contributor credit"
+      description: "Your preferred public name and optional affiliation, or “no acknowledgment”. If blank, we may acknowledge your GitHub username. Your issue author identity remains public."
+    validations:
+      required: false
+  -
+    type: "checkboxes"
+    id: "submission-agreement"
+    attributes:
+      label: "Before submitting"
+      options:
+        -
+          label: "I understand that this submission, my GitHub username and the discussion are public immediately."
+          required: true
+        -
+          label: "I have permission to share the material. I submit my original wording under the repository’s Apache 2.0 license and identify any third-party quotations and their sources."
+          required: true
