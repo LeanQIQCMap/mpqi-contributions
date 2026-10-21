@@ -8,7 +8,7 @@ body:
   -
     type: "markdown"
     attributes:
-      value: "Thank you for helping improve MPQI Proof Map. This submission, your GitHub username and all comments will be public immediately. Please do not include private contact details or confidential material. Inclusion in the Map requires editorial review; a submission is not a correctness endorsement."
+      value: "Thank you for helping improve Map of Proofs in Physics. This submission, your GitHub username and all comments will be public immediately. Please do not include private contact details or confidential material. Inclusion in the Map requires editorial review; a submission is not a correctness endorsement."
   -
     type: "input"
     id: "result"

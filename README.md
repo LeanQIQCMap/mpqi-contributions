@@ -1,4 +1,4 @@
-# Contribute to MPQI Proof Map
+# Contribute to Map of Proofs in Physics
 
 Help improve our guide to theorems, conjectures, proofs and proof resources in
 mathematical physics and quantum information. You do not need to write code
