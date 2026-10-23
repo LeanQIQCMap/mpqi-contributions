@@ -1,12 +1,12 @@
 # Contribute to Map of Proofs in Physics
 
-Help improve our guide to theorems, conjectures, proofs and proof resources in
+Help improve our guide to theorems, conjectures, open questions, proofs and proof resources in
 mathematical physics and quantum information. You do not need to write code
 or edit the database.
 
 Choose a contribution:
 
-- [Suggest a theorem or conjecture](https://github.com/LeanQIQCMap/mpqi-contributions/issues/new?template=new-result.yml)
+- [Suggest a theorem, conjecture, or open question](https://github.com/LeanQIQCMap/mpqi-contributions/issues/new?template=new-result.yml)
 - [Share progress or a proof](https://github.com/LeanQIQCMap/mpqi-contributions/issues/new?template=progress.yml)
 - [Add a review, explanation or Lean resource](https://github.com/LeanQIQCMap/mpqi-contributions/issues/new?template=review-resource.yml)
 - [Correct an entry](https://github.com/LeanQIQCMap/mpqi-contributions/issues/new?template=correction.yml)

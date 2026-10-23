@@ -1,4 +1,4 @@
-name: "Suggest a theorem or conjecture"
+name: "Suggest a theorem, conjecture, or open question"
 description: "Propose a result with its statement, assumptions and sources."
 title: "[New result] "
 labels:
@@ -32,7 +32,7 @@ body:
       label: "What are you suggesting?"
       options:
         - "Theorem or bound"
-        - "Conjecture or open problem"
+        - "Conjecture or open question"
         - "Other mathematical result"
     validations:
       required: true
